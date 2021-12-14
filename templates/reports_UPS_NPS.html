@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+         <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Dialer</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Google Doc</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">QA</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">Head Count</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="UPS NPS - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNjE4OTExYTAtZGIwNi00ZDVmLTk4N2QtMGQ1NjdlYzBlMTA0IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="UPS NPS - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNjE4OTExYTAtZGIwNi00ZDVmLTk4N2QtMGQ1NjdlYzBlMTA0IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="UPS NPS - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNjE4OTExYTAtZGIwNi00ZDVmLTk4N2QtMGQ1NjdlYzBlMTA0IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionbb33d71abb15ee31a2c2" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="UPS NPS - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNjE4OTExYTAtZGIwNi00ZDVmLTk4N2QtMGQ1NjdlYzBlMTA0IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection933c29f63584730ec9c0" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

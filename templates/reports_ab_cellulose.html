@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+        
+        <!-- page content -->
+        <div class="right_col" role="main">
+
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Report</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Agent Performance</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">Head Count</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="AB Cellulose - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiYjJiNjI3MDEtNTU3Ni00NzBlLWJmNGYtMDY1ZTIzOGNjNmFjIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="AB Cellulose" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiYjJiNjI3MDEtNTU3Ni00NzBlLWJmNGYtMDY1ZTIzOGNjNmFjIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection2e05e3ed15b81e9dabb1" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="AB Cellulose" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiYjJiNjI3MDEtNTU3Ni00NzBlLWJmNGYtMDY1ZTIzOGNjNmFjIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection31b8061e43ee4dd3097b" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

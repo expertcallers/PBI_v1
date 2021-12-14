@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Dialer</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Agent Performance</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">Head Count</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">Google Doc Data New</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Citizen Capital - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMzE0ZDQwNjgtN2VhMS00YjhlLTllMDktZDFhMzA4ZjllMzA5IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Citizen Capital - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMzE0ZDQwNjgtN2VhMS00YjhlLTllMDktZDFhMzA4ZjllMzA5IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection88bf8f7149eac6e77724" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Citizen Capital - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMzE0ZDQwNjgtN2VhMS00YjhlLTllMDktZDFhMzA4ZjllMzA5IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionc0bd01aa644205292463" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="Citizen Capital - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMzE0ZDQwNjgtN2VhMS00YjhlLTllMDktZDFhMzA4ZjllMzA5IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection02b1843c2097a7e5a020" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

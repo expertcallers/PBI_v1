@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+         <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Google doc</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Head Count</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">QA</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Tanaor Jewelry Israel Ltd - Google doc" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZTM1Mjc1ODQtN2JhNy00N2ZlLWI2MjktMzA1ZDE5NTVhZGUzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Tanaor Jewelry Israel Ltd - Google doc" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZTM1Mjc1ODQtN2JhNy00N2ZlLWI2MjktMzA1ZDE5NTVhZGUzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionb21663ff6d4d08d104be" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Tanaor Jewelry Israel Ltd - Google doc" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZTM1Mjc1ODQtN2JhNy00N2ZlLWI2MjktMzA1ZDE5NTVhZGUzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection86f0573614f7bfe3445b" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+{% endblock %}

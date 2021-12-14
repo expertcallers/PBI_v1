@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+         <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Outbound-Overview</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Outbound-Agent Performance</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">Head Count</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">Leads & Sales</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu4">Data Captured</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Insalvage - Outbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmUxNGEzMTctNzFjMi00NjVjLTg5NmUtMmVmNDRjZDY1NmYxIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Insalvage - Outbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmUxNGEzMTctNzFjMi00NjVjLTg5NmUtMmVmNDRjZDY1NmYxIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection1ce43500c1d64e1eb24b" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Insalvage - Outbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmUxNGEzMTctNzFjMi00NjVjLTg5NmUtMmVmNDRjZDY1NmYxIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionae7a5d16001346b4d5b0" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="Insalvage - Outbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmUxNGEzMTctNzFjMi00NjVjLTg5NmUtMmVmNDRjZDY1NmYxIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection186cf90b4cde050c7ce8" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                  <iframe title="Insalvage - Outbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmUxNGEzMTctNzFjMi00NjVjLTg5NmUtMmVmNDRjZDY1NmYxIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectiond549b4b39631194207ab" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

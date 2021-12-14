@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+         <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Dialer</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Tickets</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">System In Out</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Tech Report - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMWQ2NzFmN2YtMzM1NC00MDMzLTk4NTItMGFjNTBlM2U3YTU4IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Tech Report - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMWQ2NzFmN2YtMzM1NC00MDMzLTk4NTItMGFjNTBlM2U3YTU4IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection76b3ef0cb49e56c4e620" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Tech Report - Dialer" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMWQ2NzFmN2YtMzM1NC00MDMzLTk4NTItMGFjNTBlM2U3YTU4IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection50a058b3c42a30f50c36" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

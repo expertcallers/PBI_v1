@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+        <!-- page content -->
+<div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Overview</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Avg CPH</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">CPH Target vs Achieved</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">Negative Chats</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu4">Conversion</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu5">Conversion Target vs Achieved</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu6">Dealer Escalation</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu7">Lead Not Sent</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu8">Absenteeism</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu9">Attrition</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu10">Login Hour Target vs Achieved</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection6df167ba7cedfffd38b0" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection5154b1bedc7d2f5d75de" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectione1e94a1e7d2d5009153e" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection2b4bf294d82abdd4c7be" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu5" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectiona16bffcd0af081812b6e" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu6" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection706e09a5ae34bdbb7e30" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu7" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection055188fb2c5737bd6cdc" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu8" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection8e6f6e4c3a929397e745" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu9" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection4116fb814c0edc89334b" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu10" class="tab-pane fade">
+                  <iframe title="Gubagoo - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlNDNiMjYtNmIyYi00MDcwLWE1ZDktMmZlY2VlY2YzODA3IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectiondcefc34b2ae969d4b0ab" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+
+     {% endblock %}

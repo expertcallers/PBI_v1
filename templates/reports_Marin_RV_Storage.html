@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+         <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Overview</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Activity Log</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">Reported to Internal Security</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">Reported to cops and emergency</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu4">Camera Offline</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu5">Log Count</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu6">Head Count</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Marin RV Storage - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiODFjN2UzN2QtOWFlYi00MTdkLTkwMGUtYmY4ZWU3OTRkODI2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Marin RV Storage - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiODFjN2UzN2QtOWFlYi00MTdkLTkwMGUtYmY4ZWU3OTRkODI2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionff5328be5b425faa36fd" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Marin RV Storage - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiODFjN2UzN2QtOWFlYi00MTdkLTkwMGUtYmY4ZWU3OTRkODI2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionf1a60ac90b7747d2f80a" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="Marin RV Storage - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiODFjN2UzN2QtOWFlYi00MTdkLTkwMGUtYmY4ZWU3OTRkODI2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection8d7ed0641b0dcb4cd8e8" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                  <iframe title="Marin RV Storage - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiODFjN2UzN2QtOWFlYi00MTdkLTkwMGUtYmY4ZWU3OTRkODI2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionbab4559e8bbae107bf97" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu5" class="tab-pane fade">
+                  <iframe title="Marin RV Storage - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiODFjN2UzN2QtOWFlYi00MTdkLTkwMGUtYmY4ZWU3OTRkODI2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionccd7a3cf39320e8e5a1e" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu6" class="tab-pane fade">
+                  <iframe title="Marin RV Storage - Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiODFjN2UzN2QtOWFlYi00MTdkLTkwMGUtYmY4ZWU3OTRkODI2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection2c143330301a8b9b800d" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

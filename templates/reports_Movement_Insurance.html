@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+         <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Report</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Raw</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">QA</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">Head Count</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Movement Insurance - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMzk3NGQyYWYtNjI2MC00MjY0LTgyMzItYTc0YjhmMDA1ODY5IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Movement Insurance - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMzk3NGQyYWYtNjI2MC00MjY0LTgyMzItYTc0YjhmMDA1ODY5IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection31305e710500be0ed5f7" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Movement Insurance - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMzk3NGQyYWYtNjI2MC00MjY0LTgyMzItYTc0YjhmMDA1ODY5IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection2e4dbd2bd02158ca2632" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="Movement Insurance - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMzk3NGQyYWYtNjI2MC00MjY0LTgyMzItYTc0YjhmMDA1ODY5IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionbd1e5882309289a90382" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

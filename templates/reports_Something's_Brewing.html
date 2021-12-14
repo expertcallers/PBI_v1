@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+         <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Inbound-Overview</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Inbound-Agent Performance</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">Outbound-Agent Performance</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">Outbound-Overview</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu4">Inbound QA</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu5">Outbound QA</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu6">Head Count</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Something's Brewing - Inbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZDQ4YjA0ODktOWJjZC00ODdmLThlNTAtN2I1MDRiMjYzNzVlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Something's Brewing - Inbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZDQ4YjA0ODktOWJjZC00ODdmLThlNTAtN2I1MDRiMjYzNzVlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection4077751f00874c7215d9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Something's Brewing - Inbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZDQ4YjA0ODktOWJjZC00ODdmLThlNTAtN2I1MDRiMjYzNzVlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionbb1c9bc2806a2c79e711" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="Something's Brewing - Inbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZDQ4YjA0ODktOWJjZC00ODdmLThlNTAtN2I1MDRiMjYzNzVlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection435fccc82c71c19393c0" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                  <iframe title="Something's Brewing - Inbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZDQ4YjA0ODktOWJjZC00ODdmLThlNTAtN2I1MDRiMjYzNzVlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection2f7ee4bbae80e5639ca0" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu5" class="tab-pane fade">
+                  <iframe title="Something's Brewing - Inbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZDQ4YjA0ODktOWJjZC00ODdmLThlNTAtN2I1MDRiMjYzNzVlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection459489fe0a4117ddd0a0" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu6" class="tab-pane fade">
+                  <iframe title="Something's Brewing - Inbound-Overview" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZDQ4YjA0ODktOWJjZC00ODdmLThlNTAtN2I1MDRiMjYzNzVlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionb8c947d30b89e264c88b" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

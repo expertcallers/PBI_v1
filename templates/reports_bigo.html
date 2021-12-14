@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">FWS Group Chat</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">FWS Group Space</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">FWS IMO Bigo Live Streaming QA</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">FWS Like Short Video</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu4">FWS Picture QA</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu5">FWS Public Story</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu6">Like Live Streaming Recheck</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu7">Pango Short Video</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu8">Likee CPR & CPRME</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu9">Like Live Streaming Recheck 2</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu10">Likee SV Accuracy Report</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu11">Pango SV Accuracy Report</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu12">Community Profile ME Region</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection8b1b7771a50e8d26e567 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection495ed56072003ba00719 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection91ae2a66c629322d17b2 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionc870d1495808ca06164a frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu5" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionf726614238a8d4ec82c6 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu6" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection7d14ac659bb2b0a0b7a3 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu7" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection477ba9e9f0b43fefa5e9 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu8" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionf9cf270e12ea062b2b14 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu9" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection7e1431fee531bc95ad5e frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu10" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection38f27110880763e03221 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu11" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection8101f3337713ec01d19b frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu12" class="tab-pane fade">
+                  <iframe title="Bigo" width="1024" height="1060" src=https://app.powerbi.com/view?r=eyJrIjoiYTZjZDM3YTMtNjVmZS00OTM4LWFkNzAtOWIwNjVkODRmMzQ1IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectioncfb64f80a5436a97c141 frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}

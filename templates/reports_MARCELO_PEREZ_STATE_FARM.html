@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+         <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+            {% if user.is_authenticated %}
+              <h1>{{user.profile.campaign}}</h1>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Report</a></a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Agent Performance</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">Head Count</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu3">QA</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe title="MARCELO PEREZ STATE FARM - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiYzE5MDA0ZTktZmNkZi00ZWExLTkxYWEtNDFjYWU4ZWQyYjE0IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe title="MARCELO PEREZ STATE FARM - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiYzE5MDA0ZTktZmNkZi00ZWExLTkxYWEtNDFjYWU4ZWQyYjE0IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection4057d7e03cb95075309d" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe title="MARCELO PEREZ STATE FARM - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiYzE5MDA0ZTktZmNkZi00ZWExLTkxYWEtNDFjYWU4ZWQyYjE0IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectionc1d500c0b7057339ecd5" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe title="MARCELO PEREZ STATE FARM - Report" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiYzE5MDA0ZTktZmNkZi00ZWExLTkxYWEtNDFjYWU4ZWQyYjE0IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection913faf9f100dee6339ce" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+{% endblock %}
