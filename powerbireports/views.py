@@ -1013,3 +1013,4 @@ def mgtReport(request, cid):
 
     if campaiginid == '0058':
         return redirect('/practo')
+
