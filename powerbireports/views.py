@@ -26,182 +26,206 @@ def loginAndRedirect(request):
 
             # this is for manager's login
             if campaiginid == 'all':
-                return redirect('/all')
+                return redirect('/pbireport/all')
 
             # this is for other reports login
             if campaiginid == '0001':
-                return redirect('/bigo-reports')
+                return redirect('/pbireport/bigo-reports')
 
             if campaiginid == '0002':
-                return redirect('/aadya-reports')
+                return redirect('/pbireport/aadya-reports')
 
             if campaiginid == '0003':
-                return redirect('/aditya-birla-cellulose-reports')
+                return redirect('/pbireport/aditya-birla-cellulose-reports')
 
             if campaiginid == '0004':
-                return redirect('/aditya-birla-toll-free-reports')
+                return redirect('/pbireport/aditya-birla-toll-free-reports')
 
             if campaiginid == '0005':
-                return redirect('/aditya-birla-nps-reports')
+                return redirect('/pbireport/aditya-birla-nps-reports')
 
             if campaiginid == '0006':
-                return redirect('/aditya-birla-retailer-calling-nps-reports')
+                return redirect('/pbireport/aditya-birla-retailer-calling-nps-reports')
 
             if campaiginid == '0007':
-                return redirect('/aditya-birla-website-enquiry-reports')
+                return redirect('/pbireport/aditya-birla-website-enquiry-reports')
 
             if campaiginid == '0008':
-                return redirect('/akdy-calls')
+                return redirect('/pbireport/akdy-calls')
 
             if campaiginid == '0009':
-                return redirect('/avenue-living-communities')
+                return redirect('/pbireport/avenue-living-communities')
 
             if campaiginid == '0010':
-                return redirect('/bhagyalaxmi-industries')
+                return redirect('/pbireport/bhagyalaxmi-industries')
 
             if campaiginid == '0011':
-                return redirect('/bng-vs-php')
+                return redirect('/pbireport/bng-vs-php')
 
             if campaiginid == '0012':
-                return redirect('/career-transition-specialist')
+                return redirect('/pbireport/career-transition-specialist')
 
             if campaiginid == '0013':
-                return redirect('/citizen-capital')
+                return redirect('/pbireport/citizen-capital')
 
             if campaiginid == '0014':
-                return redirect('/core-small-insurance-agency-inc')
+                return redirect('/pbireport/core-small-insurance-agency-inc')
 
             if campaiginid == '0015':
-                return redirect('/cross-tower')
+                return redirect('/pbireport/cross-tower')
 
             if campaiginid == '0016':
-                return redirect('/csc-service-works')
+                return redirect('/pbireport/csc-service-works')
 
             if campaiginid == '0017':
-                return redirect('/daniel-wellington')
+                return redirect('/pbireport/daniel-wellington')
 
             if campaiginid == '0018':
-                return redirect('/digital-signage')
+                return redirect('/pbireport/digital-signage')
 
             if campaiginid == '0019':
-                return redirect('/digital-swiss-gold')
+                return redirect('/pbireport/digital-swiss-gold')
 
             if campaiginid == '0020':
-                return redirect('/ee-hh-aaa')
+                return redirect('/pbireport/ee-hh-aaa')
 
             if campaiginid == '0021':
-                return redirect('/embassy-premium')
+                return redirect('/pbireport/embassy-premium')
 
             if campaiginid == '0022':
-                return redirect('/fame-house')
+                return redirect('/pbireport/fame-house')
 
             if campaiginid == '0023':
-                return redirect('/fitness-mortgage')
+                return redirect('/pbireport/fitness-mortgage')
 
             if campaiginid == '0024':
-                return redirect('/genesis-acquisition')
+                return redirect('/pbireport/genesis-acquisition')
 
             if campaiginid == '0025':
-                return redirect('/golden-eye-cctv')
+                return redirect('/pbireport/golden-eye-cctv')
 
             if campaiginid == '0026':
-                return redirect('/gubagoo')
+                return redirect('/pbireport/gubagoo')
 
             if campaiginid == '0027':
-                return redirect('/hindalco')
+                return redirect('/pbireport/hindalco')
 
             if campaiginid == '0028':
-                return redirect('/ilm')
+                return redirect('/pbireport/ilm')
 
             if campaiginid == '0029':
-                return redirect('/imaginarium')
+                return redirect('/pbireport/imaginarium')
 
             if campaiginid == '0030':
-                return redirect('/imprint-plus')
+                return redirect('/pbireport/imprint-plus')
 
             if campaiginid == '0031':
-                return redirect('/insalvage')
+                return redirect('/pbireport/insalvage')
 
             if campaiginid == '0032':
-                return redirect('/kaapi-machines')
+                return redirect('/pbireport/kaapi-machines')
 
             if campaiginid == '0033':
-                return redirect('/lawoffice-m-geller')
+                return redirect('/pbireport/lawoffice-m-geller')
 
             if campaiginid == '0034':
-                return redirect('/marcelo-perez')
+                return redirect('/pbireport/marcelo-perez')
 
             if campaiginid == '0035':
-                return redirect('/marin-rv-storage')
+                return redirect('/pbireport/marin-rv-storage')
 
             if campaiginid == '0036':
-                return redirect('/medicare')
+                return redirect('/pbireport/medicare')
 
             if campaiginid == '0037':
-                return redirect('/mob-twenty-two')
+                return redirect('/pbireport/mob-twenty-two')
 
             if campaiginid == '0038':
-                return redirect('/monster-lead')
+                return redirect('/pbireport/monster-lead')
 
             if campaiginid == '0039':
-                return redirect('/movement-insurance')
+                return redirect('/pbireport/movement-insurance')
 
             if campaiginid == '0040':
-                return redirect('/naffa-innovations')
+                return redirect('/pbireport/naffa-innovations')
 
             if campaiginid == '0041':
-                return redirect('/new-dim-pharmacy')
+                return redirect('/pbireport/new-dim-pharmacy')
 
             if campaiginid == '0042':
-                return redirect('/noom')
+                return redirect('/pbireport/noom')
 
             if campaiginid == '0043':
-                return redirect('/printer-pix')
+                return redirect('/pbireport/printer-pix')
 
             if campaiginid == '0044':
-                return redirect('/protostar')
+                return redirect('/pbireport/protostar')
 
             if campaiginid == '0045':
-                return redirect('/rainbow-dia-lts')
+                return redirect('/pbireport/rainbow-dia-lts')
 
             if campaiginid == '0046':
-                return redirect('/sana-life-science')
+                return redirect('/pbireport/sana-life-science')
 
             if campaiginid == '0047':
-                return redirect('/saura-khalki-fashion')
+                return redirect('/pbireport/saura-khalki-fashion')
 
             if campaiginid == '0048':
-                return redirect('/schindler-media')
+                return redirect('/pbireport/schindler-media')
 
             if campaiginid == '0049':
-                return redirect('/somethings-brewing')
+                return redirect('/pbireport/somethings-brewing')
 
             if campaiginid == '0050':
-                return redirect('/sterling-strategies-llc')
+                return redirect('/pbireport/sterling-strategies-llc')
 
             if campaiginid == '0051':
-                return redirect('/tanaor-jewelry-lsrael-ltd')
+                return redirect('/pbireport/tanaor-jewelry-lsrael-ltd')
 
             if campaiginid == '0052':
-                return redirect('/tca-counseling-group')
+                return redirect('/pbireport/tca-counseling-group')
 
             if campaiginid == '0053':
-                return redirect('/tech-report')
+                return redirect('/pbireport/tech-report')
 
             if campaiginid == '0054':
-                return redirect('/us-jaclean-inc')
+                return redirect('/pbireport/us-jaclean-inc')
 
             if campaiginid == '0055':
-                return redirect('/ups-nps')
+                return redirect('/pbireport/ups-nps')
 
             if campaiginid == '0056':
-                return redirect('/window-treatment-unlimited')
+                return redirect('/pbireport/window-treatment-unlimited')
 
             if campaiginid == '0057':
-                return redirect('/winopoly')
+                return redirect('/pbireport/winopoly')
 
             if campaiginid == '0058':
-                return redirect('/practo')
+                return redirect('/pbireport/practo')
+
+            if campaiginid == "0059":
+                return redirect('/pbireport/allcare-phycical')
+
+            if campaiginid == "0060":
+                return redirect('/pbireport/blazing-hog')
+
+            if campaiginid == "0061":
+                return redirect('/pbireport/bright-way')
+
+            if campaiginid == "0062":
+                return redirect('/pbireport/calista')
+
+            if campaiginid == "0063":
+                return redirect('/pbireport/global-arc')
+
+            if campaiginid == "0064":
+                return redirect('/pbireport/jiffy-ship-cargo')
+
+            if campaiginid == "0065":
+                return redirect('/pbireport/pick-pack-delivery')
+
+            if campaiginid == "0066":
+                return redirect('/pbireport/sapphire-medicals')
 
         else:
             if User.objects.filter(username=username).exists():
@@ -235,7 +259,7 @@ def change_password(request):
             user.save()
             user.profile.save()
             logout(request)
-            return redirect('/')
+            return redirect('/pbireport/')
         else:
             messages.error(request, 'Please correct the error below.')
     else:
@@ -250,7 +274,7 @@ def bigoReport(request):
         return render(request, 'reports_bigo.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # aadya-reports
@@ -260,7 +284,7 @@ def aadyaReport(request):
         return render(request, 'reports_aadya.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # aditya-birla-cellulose-reports
@@ -270,7 +294,7 @@ def adityaBirlaCelluloseReport(request):
         return render(request, 'reports_ab_cellulose.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # aditya-birla-toll-free-reports
@@ -280,7 +304,7 @@ def adityaBirlaTollFreeReport(request):
         return render(request, 'reports_ab_toll_free.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # aditya-birla-nps-reports
@@ -290,7 +314,7 @@ def adityaBirlaNPSReport(request):
         return render(request, 'reports_aditya_birla_nps.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # aditya-birla-retailer-calling-nps-reports
@@ -300,7 +324,7 @@ def adityaBirlaRetailerCallingReport(request):
         return render(request, 'reports_aditya_birla_retailer_calling.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # aditya-birla-website-enquiry-reports
@@ -310,7 +334,7 @@ def adityaBirlaWebsiteEnquiryReport(request):
         return render(request, 'reports_aditya_birla_website_enquiry.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # akdy-calls
@@ -320,7 +344,7 @@ def aKDYcallsReport(request):
         return render(request, 'reports_akdy.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # avenue-living-communities
@@ -330,7 +354,7 @@ def avenueLivingCommunitiesReport(request):
         return render(request, 'reports_avenue_living_communities.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # bhagyalaxmi-industries
@@ -340,7 +364,7 @@ def bhagyalaxmiIndustriespractoReport(request):
         return render(request, 'reports_bhagyalaxmi_industries.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # bng-vs-php
@@ -350,7 +374,7 @@ def bNGvsPHPreport(request):
         return render(request, 'reports_BNG_Vs_PHP.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # career-transition-specialist
@@ -360,7 +384,7 @@ def careerTransitionSpecialistReport(request):
         return render(request, 'reports_Career_Transition_Specialist.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # citizen-capital
@@ -370,7 +394,7 @@ def citizenCapitalReport(request):
         return render(request, 'reports_Citizen_Capital.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # core-small-insurance-agency-inc
@@ -380,7 +404,7 @@ def coreySmallInsuranceAgencyIncReport(request):
         return render(request, 'reports_Corey_Small_Insurance_Agency_Inc.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # cross-tower
@@ -390,7 +414,7 @@ def crossTowerReport(request):
         return render(request, 'reports_Cross_Tower.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # csc-service-works
@@ -400,7 +424,7 @@ def cSCserviceWorksReport(request):
         return render(request, 'reports_CSC_Service_Works.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # daniel-wellington
@@ -410,7 +434,7 @@ def danielWellingtonReport(request):
         return render(request, 'reports_Daniel_Wellington.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # digital-signage
@@ -420,7 +444,7 @@ def digitalSignageReport(request):
         return render(request, 'reports_Digital_Signage.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # digital-swiss-gold
@@ -430,7 +454,7 @@ def digitalSwissGoldReport(request):
         return render(request, 'reports_Digital_Swiss_Gold.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # ee-hh-aaa
@@ -440,7 +464,7 @@ def eEHHAAAreport(request):
         return render(request, 'reports_EEHHAAA.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # embassy-premium
@@ -450,7 +474,7 @@ def embassyPremiumReport(request):
         return render(request, 'reports_Embassy_Premium.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # fame-house
@@ -460,7 +484,7 @@ def fameHouseReport(request):
         return render(request, 'reports_Fame_House.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # fitness-mortgage
@@ -470,7 +494,7 @@ def fitnessMortgageReport(request):
         return render(request, 'reports_Finesse_Mortgage.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # genesis-acquisition
@@ -480,7 +504,7 @@ def genesisAccquisitionReport(request):
         return render(request, 'reports_Genesis_Acquisition.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # golden-eye-cctv
@@ -490,7 +514,7 @@ def goldenEyeCCTVreport(request):
         return render(request, 'reports_Golden_Eye_CCTV.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # gubagoo
@@ -500,7 +524,7 @@ def gUbagooReport(request):
         return render(request, 'reports_Gubagoo.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # hindalco
@@ -510,7 +534,7 @@ def hindalcoReport(request):
         return render(request, 'reports_Hindalco.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # ilm
@@ -520,7 +544,7 @@ def iLMreport(request):
         return render(request, 'reports_ILM.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # imaginarium
@@ -530,7 +554,7 @@ def imaginariumSolutionsLTDreport(request):
         return render(request, 'reports_Imaginarium_Solutions_Ltd.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # imprint-plus
@@ -540,7 +564,7 @@ def imprintPlusReport(request):
         return render(request, 'reports_Imprint_Plus.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # insalvage
@@ -550,7 +574,7 @@ def iNsalvageReport(request):
         return render(request, 'reports_Insalvage.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # kaapi-machines
@@ -560,7 +584,7 @@ def kaapiMachinesReport(request):
         return render(request, 'reports_Kaapi_Machines.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # lawoffice-m-geller
@@ -570,7 +594,7 @@ def lawOfficesRobertMgellerReport(request):
         return render(request, 'reports_LAW_OFFICES_OF_ROBERT_M._GELLER.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # marcelo-perez
@@ -580,7 +604,7 @@ def marceloPerezStateFarmReport(request):
         return render(request, 'reports_MARCELO_PEREZ_STATE_FARM.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # marin-rv-storage
@@ -590,7 +614,7 @@ def marinRVstorageReport(request):
         return render(request, 'reports_Marin_RV_Storage.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # medicare
@@ -600,7 +624,7 @@ def mediCareReport(request):
         return render(request, 'reports_Medicare.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # mob-twenty-two
@@ -610,7 +634,7 @@ def mobileTwentyTwoReport(request):
         return render(request, 'reports_Mobile_22.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # monster-lead
@@ -620,7 +644,7 @@ def monsterLeadReport(request):
         return render(request, 'reports_Monster_Lead.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # movement-insurance
@@ -630,7 +654,7 @@ def movementInsuranceReport(request):
         return render(request, 'reports_Movement_Insurance.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # naffa-innovations
@@ -640,7 +664,7 @@ def naffaInnovationsReport(request):
         return render(request, 'reports_Naffa_Innovations.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # new-dim-pharmacy
@@ -650,7 +674,7 @@ def newDimensionPharmacyReport(request):
         return render(request, 'reports_New_Dimension_Pharmacy.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # noom
@@ -660,7 +684,7 @@ def noomReport(request):
         return render(request, 'reports_Noom.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # printer-pix
@@ -670,7 +694,7 @@ def printerPixReport(request):
         return render(request, 'reports_Printerpix.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # protostar
@@ -680,7 +704,7 @@ def protostarReport(request):
         return render(request, 'reports_Protostar.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # rainbow-dia-lts
@@ -690,7 +714,7 @@ def rainbowDiagnosticsLTSreport(request):
         return render(request, 'reports_RainBow_Diagnostics_LTS.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # sana-life-science
@@ -701,7 +725,7 @@ def sanaLifeScienceReport(request):
     else:
 
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # saura-khalki-fashion
@@ -711,7 +735,7 @@ def saurabhaktiKhalkiFasionReport(request):
         return render(request, 'reports_Saurabhakti_Khalki_Fashion.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # schindler-media
@@ -721,7 +745,7 @@ def schindlerMediaReport(request):
         return render(request, 'reports_Schindler_Media.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # somethings-brewing
@@ -731,7 +755,7 @@ def somethingsBrewingReport(request):
         return render(request, "reports_Something's_Brewing.html")
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # sterling-strategies-llc
@@ -741,7 +765,7 @@ def sterlingStrategiesLLCreport(request):
         return render(request, 'reports_Sterling_Strategies_Llc.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # tanaor-jewelry-lsrael-ltd
@@ -751,7 +775,7 @@ def tanaorJewelryIsraelLtdReport(request):
         return render(request, 'reports_Tanaor_Jewelry_Israel_Ltd.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # tca-counseling-group
@@ -761,7 +785,7 @@ def tCAcounselingGroupReport(request):
         return render(request, 'reports_TCA_Counseling_Group.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # tech-report
@@ -771,7 +795,7 @@ def techReport(request):
         return render(request, 'reports_Tech_Report.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # us-jaclean-inc
@@ -781,7 +805,7 @@ def uSJacleanINCreport(request):
         return render(request, 'reports_U_S_JACLEAN_INC.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # ups-nps
@@ -791,7 +815,7 @@ def uPSNPSreport(request):
         return render(request, 'reports_UPS_NPS.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # window-treatment-unlimited
@@ -801,7 +825,7 @@ def windowTreatmentUnlimitedReport(request):
         return render(request, 'reports_Window_Treatment_Unlimited.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # winopoly
@@ -811,7 +835,7 @@ def winopolyReport(request):
         return render(request, 'reports_Winopoly.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 # Practo
@@ -821,8 +845,81 @@ def PractoReport(request):
         return render(request, 'reports_Practo_Technologies_Cumulative.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
+# All Care Physical Therapy
+@login_required
+def allCarePhysicalTherapy(request):
+    if request.user.profile.campaignid == '0059' or request.user.profile.campaignid == 'all':
+        return render(request, 'reports_all_care_physical_therapy.html')
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
+
+
+# blazing-hog
+@login_required
+def blazingHogAndWahooInternet(request):
+    if request.user.profile.campaignid == '0060' or request.user.profile.campaignid == 'all':
+        return render(request, 'reports_blazing_hog.html')
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
+
+# bright-way
+@login_required
+def brightWay(request):
+    if request.user.profile.campaignid == '0061' or request.user.profile.campaignid == 'all':
+        return render(request, 'reports_bright_way.html')
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
+
+
+# calista
+@login_required
+def Calista(request):
+    if request.user.profile.campaignid == '0062' or request.user.profile.campaignid == 'all':
+        return render(request, 'reports_Calista.html')
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
+
+# global-arc
+@login_required
+def globalARC(request):
+    if request.user.profile.campaignid == '0063' or request.user.profile.campaignid == 'all':
+        return render(request, 'reports_global_arc.html')
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
+
+# jiffy-ship-cargo
+@login_required
+def jiffyShipCargo(request):
+    if request.user.profile.campaignid == '0064' or request.user.profile.campaignid == 'all':
+        return render(request, 'reports_Jiffy_Ship_Cargo.html')
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
+
+# pick-pack-delivery
+@login_required
+def pickPackDelivery(request):
+    if request.user.profile.campaignid == '0065' or request.user.profile.campaignid == 'all':
+        return render(request, 'reports_Pick_Pack_Delivery.html')
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
+
+# sapphire-medicals
+@login_required
+def sapphireMedicals(request):
+    if request.user.profile.campaignid == '0066' or request.user.profile.campaignid == 'all':
+        return render(request, 'reports_Sapphire_Medicals.html')
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
 
 # all
 @login_required
@@ -833,7 +930,7 @@ def managementDashboard(request):
         return render(request, 'reports_all.html', data)
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/logout')
+        return redirect('/pbireport/logout')
 
 
 @login_required
@@ -841,176 +938,200 @@ def mgtReport(request, cid):
     campaiginid = cid
 
     if campaiginid == '0001':
-        return redirect('/bigo-reports')
+        return redirect('/pbireport/bigo-reports')
 
     if campaiginid == '0002':
-        return redirect('/aadya-reports')
+        return redirect('/pbireport/aadya-reports')
 
     if campaiginid == '0003':
-        return redirect('/aditya-birla-cellulose-reports')
+        return redirect('/pbireport/aditya-birla-cellulose-reports')
 
     if campaiginid == '0004':
-        return redirect('/aditya-birla-toll-free-reports')
+        return redirect('/pbireport/aditya-birla-toll-free-reports')
 
     if campaiginid == '0005':
-        return redirect('/aditya-birla-nps-reports')
+        return redirect('/pbireport/aditya-birla-nps-reports')
 
     if campaiginid == '0006':
-        return redirect('/aditya-birla-retailer-calling-nps-reports')
+        return redirect('/pbireport/aditya-birla-retailer-calling-nps-reports')
 
     if campaiginid == '0007':
-        return redirect('/aditya-birla-website-enquiry-reports')
+        return redirect('/pbireport/aditya-birla-website-enquiry-reports')
 
     if campaiginid == '0008':
-        return redirect('/akdy-calls')
+        return redirect('/pbireport/akdy-calls')
 
     if campaiginid == '0009':
-        return redirect('/avenue-living-communities')
+        return redirect('/pbireport/avenue-living-communities')
 
     if campaiginid == '0010':
-        return redirect('/bhagyalaxmi-industries')
+        return redirect('/pbireport/bhagyalaxmi-industries')
 
     if campaiginid == '0011':
-        return redirect('/bng-vs-php')
+        return redirect('/pbireport/bng-vs-php')
 
     if campaiginid == '0012':
-        return redirect('/career-transition-specialist')
+        return redirect('/pbireport/career-transition-specialist')
 
     if campaiginid == '0013':
-        return redirect('/citizen-capital')
+        return redirect('/pbireport/citizen-capital')
 
     if campaiginid == '0014':
-        return redirect('/core-small-insurance-agency-inc')
+        return redirect('/pbireport/core-small-insurance-agency-inc')
 
     if campaiginid == '0015':
-        return redirect('/cross-tower')
+        return redirect('/pbireport/cross-tower')
 
     if campaiginid == '0016':
-        return redirect('/csc-service-works')
+        return redirect('/pbireport/csc-service-works')
 
     if campaiginid == '0017':
-        return redirect('/daniel-wellington')
+        return redirect('/pbireport/daniel-wellington')
 
     if campaiginid == '0018':
-        return redirect('/digital-signage')
+        return redirect('/pbireport/digital-signage')
 
     if campaiginid == '0019':
-        return redirect('/digital-swiss-gold')
+        return redirect('/pbireport/digital-swiss-gold')
 
     if campaiginid == '0020':
-        return redirect('/ee-hh-aaa')
+        return redirect('/pbireport/ee-hh-aaa')
 
     if campaiginid == '0021':
-        return redirect('/embassy-premium')
+        return redirect('/pbireport/embassy-premium')
 
     if campaiginid == '0022':
-        return redirect('/fame-house')
+        return redirect('/pbireport/fame-house')
 
     if campaiginid == '0023':
-        return redirect('/fitness-mortgage')
+        return redirect('/pbireport/fitness-mortgage')
 
     if campaiginid == '0024':
-        return redirect('/genesis-acquisition')
+        return redirect('/pbireport/genesis-acquisition')
 
     if campaiginid == '0025':
-        return redirect('/golden-eye-cctv')
+        return redirect('/pbireport/golden-eye-cctv')
 
     if campaiginid == '0026':
-        return redirect('/gubagoo')
+        return redirect('/pbireport/gubagoo')
 
     if campaiginid == '0027':
-        return redirect('/hindalco')
+        return redirect('/pbireport/hindalco')
 
     if campaiginid == '0028':
-        return redirect('/ilm')
+        return redirect('/pbireport/ilm')
 
     if campaiginid == '0029':
-        return redirect('/imaginarium')
+        return redirect('/pbireport/imaginarium')
 
     if campaiginid == '0030':
-        return redirect('/imprint-plus')
+        return redirect('/pbireport/imprint-plus')
 
     if campaiginid == '0031':
-        return redirect('/insalvage')
+        return redirect('/pbireport/insalvage')
 
     if campaiginid == '0032':
-        return redirect('/kaapi-machines')
+        return redirect('/pbireport/kaapi-machines')
 
     if campaiginid == '0033':
-        return redirect('/lawoffice-m-geller')
+        return redirect('/pbireport/lawoffice-m-geller')
 
     if campaiginid == '0034':
-        return redirect('/marcelo-perez')
+        return redirect('/pbireport/marcelo-perez')
 
     if campaiginid == '0035':
-        return redirect('/marin-rv-storage')
+        return redirect('/pbireport/marin-rv-storage')
 
     if campaiginid == '0036':
-        return redirect('/medicare')
+        return redirect('/pbireport/medicare')
 
     if campaiginid == '0037':
-        return redirect('/mob-twenty-two')
+        return redirect('/pbireport/mob-twenty-two')
 
     if campaiginid == '0038':
-        return redirect('/monster-lead')
+        return redirect('/pbireport/monster-lead')
 
     if campaiginid == '0039':
-        return redirect('/movement-insurance')
+        return redirect('/pbireport/movement-insurance')
 
     if campaiginid == '0040':
-        return redirect('/naffa-innovations')
+        return redirect('/pbireport/naffa-innovations')
 
     if campaiginid == '0041':
-        return redirect('/new-dim-pharmacy')
+        return redirect('/pbireport/new-dim-pharmacy')
 
     if campaiginid == '0042':
-        return redirect('/noom')
+        return redirect('/pbireport/noom')
 
     if campaiginid == '0043':
-        return redirect('/printer-pix')
+        return redirect('/pbireport/printer-pix')
 
     if campaiginid == '0044':
-        return redirect('/protostar')
+        return redirect('/pbireport/protostar')
 
     if campaiginid == '0045':
-        return redirect('/rainbow-dia-lts')
+        return redirect('/pbireport/rainbow-dia-lts')
 
     if campaiginid == '0046':
-        return redirect('/sana-life-science')
+        return redirect('/pbireport/sana-life-science')
 
     if campaiginid == '0047':
-        return redirect('/saura-khalki-fashion')
+        return redirect('/pbireport/saura-khalki-fashion')
 
     if campaiginid == '0048':
-        return redirect('/schindler-media')
+        return redirect('/pbireport/schindler-media')
 
     if campaiginid == '0049':
-        return redirect('/somethings-brewing')
+        return redirect('/pbireport/somethings-brewing')
 
     if campaiginid == '0050':
-        return redirect('/sterling-strategies-llc')
+        return redirect('/pbireport/sterling-strategies-llc')
 
     if campaiginid == '0051':
-        return redirect('/tanaor-jewelry-lsrael-ltd')
+        return redirect('/pbireport/tanaor-jewelry-lsrael-ltd')
 
     if campaiginid == '0052':
-        return redirect('/tca-counseling-group')
+        return redirect('/pbireport/tca-counseling-group')
 
     if campaiginid == '0053':
-        return redirect('/tech-report')
+        return redirect('/pbireport/tech-report')
 
     if campaiginid == '0054':
-        return redirect('/us-jaclean-inc')
+        return redirect('/pbireport/us-jaclean-inc')
 
     if campaiginid == '0055':
-        return redirect('/ups-nps')
+        return redirect('/pbireport/ups-nps')
 
     if campaiginid == '0056':
-        return redirect('/window-treatment-unlimited')
+        return redirect('/pbireport/window-treatment-unlimited')
 
     if campaiginid == '0057':
-        return redirect('/winopoly')
+        return redirect('/pbireport/winopoly')
 
     if campaiginid == '0058':
-        return redirect('/practo')
+        return redirect('/pbireport/practo')
+
+    if campaiginid == "0059":
+        return redirect('/pbireport/allcare-phycical')
+
+    if campaiginid == "0060":
+        return redirect('/pbireport/blazing-hog')
+
+    if campaiginid == "0061":
+        return redirect('/pbireport/bright-way')
+
+    if campaiginid == "0062":
+        return redirect('/pbireport/calista')
+
+    if campaiginid == "0063":
+        return redirect('/pbireport/global-arc')
+
+    if campaiginid == "0064":
+        return redirect('/pbireport/jiffy-ship-cargo')
+
+    if campaiginid == "0065":
+        return redirect('/pbireport/pick-pack-delivery')
+
+    if campaiginid == "0066":
+        return redirect('/pbireport/sapphire-medicals')
 

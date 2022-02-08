@@ -76,9 +76,9 @@
               <div class="menu_section">
                 <ul class="nav side-menu">
                     {% if user.profile.campaignid == "all" %}
-                        <li><a href="all"><i class="fa fa-clipboard"></i>All Reports</a></li>
+                        <li><a href="/pbireport/all"><i class="fa fa-clipboard"></i>All Reports</a></li>
                     {% endif %}
-                  <li><a href="settings"><i class="fa fa-gear"></i>Settings</a></li>
+                  <li><a href="/pbireport/settings"><i class="fa fa-gear"></i>Settings</a></li>
                 </ul>
               </div>
             </div>
@@ -107,7 +107,7 @@
                     <img src="{% static 'power/images/img.jpg' %}" alt=""> {% if user.profile.campaignid == "all" %}{{user.username}}{% endif %}{% if user.profile.campaignid != "all" %}{{user.profile.campaign}}{% endif %}
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    <a class="dropdown-item"  href="/pbireport/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                   </div>
                 </li>
 
