@@ -8,7 +8,8 @@ urlpatterns = [
     path('logout',logoutNew),
 
     #reports
-    path('all',managementDashboard),
+    path('management-dashboard',managementDashboard),
+    path('campaigns/<str:type>', campaignsReport),
     path('reports/<str:cid>', mgtReport),
     path('bigo-reports',bigoReport),
     path('aadya-reports',aadyaReport),

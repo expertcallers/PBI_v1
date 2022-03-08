@@ -9,7 +9,9 @@ from .models import *
 # Create your views here.
 # login-page
 def loginPage(request):
+    logout(request)
     return render(request, 'login.html')
+
 
 
 def loginAndRedirect(request):
@@ -26,7 +28,7 @@ def loginAndRedirect(request):
 
             # this is for manager's login
             if campaiginid == 'all':
-                return redirect('/pbireport/all')
+                return redirect('/pbireport/management-dashboard')
 
             # this is for other reports login
             if campaiginid == '0001':
@@ -244,6 +246,34 @@ def logoutNew(request):
     logout(request)
     return render(request, 'login.html')
 
+
+# Management Dashboard
+@login_required
+def managementDashboard(request):
+    if request.user.profile.campaignid == 'all':
+        all_cam = Profile.objects.all().exclude(campaign_type=None).count()
+        outbound = Profile.objects.filter(campaign_type="Outbound").count()
+        inbound = Profile.objects.filter(campaign_type="Inbound").count()
+        email = Profile.objects.filter(campaign_type="Email").count()
+        other = Profile.objects.filter(campaign_type="Other").count()
+        data = {"all": all_cam, "outbound": outbound, "inbound": inbound, "email": email, "other": other}
+        return render(request, 'management_dashboard.html', data)
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
+
+@login_required
+def campaignsReport(request,type):
+    if request.user.profile.campaignid == 'all':
+        if type == "all":
+            pro = Profile.objects.exclude(campaign_type=None)
+        else:
+            pro = Profile.objects.filter(campaign_type=type)
+        data = {'profile': pro,"type":type}
+        return render(request, 'reports_all.html', data)
+    else:
+        messages.info(request, "You were logged out due to unauthorized access.")
+        return redirect('/pbireport/logout')
 
 @login_required
 def change_password(request):
@@ -917,17 +947,6 @@ def pickPackDelivery(request):
 def sapphireMedicals(request):
     if request.user.profile.campaignid == '0066' or request.user.profile.campaignid == 'all':
         return render(request, 'reports_Sapphire_Medicals.html')
-    else:
-        messages.info(request, "You were logged out due to unauthorized access.")
-        return redirect('/pbireport/logout')
-
-# all
-@login_required
-def managementDashboard(request):
-    if request.user.profile.campaignid == 'all':
-        pro = Profile.objects.exclude(campaignid="all")
-        data = {'profile': pro}
-        return render(request, 'reports_all.html', data)
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
         return redirect('/pbireport/logout')

@@ -56,7 +56,12 @@
               <div class="menu_section">
                 <ul class="nav side-menu">
                     {% if user.profile.campaignid == "all" %}
-                        <li><a href="/pbireport/all"><i class="fa fa-clipboard"></i>All Reports</a></li>
+                        <li><a href="/pbireport/management-dashboard"><i class="fa fa-home"></i>Dashboard</a></li>
+                        <li><a href="/pbireport/campaigns/all"><i class="fa fa-clipboard"></i>All Campaigns</a></li>
+                        <li><a href="/pbireport/campaigns/Outbound"><i class="fa fa-phone-volume">&#xf2a0;</i>Outbound Campaigns</a></li>
+                        <li><a href="/pbireport/campaigns/Inbound"><i class="fa fa-headphones"></i>Inbound Campaigns</a></li>
+                        <li><a href="/pbireport/campaigns/Email"><i class="fa fa-envelope"></i>Email Campaigns</a></li>
+                        <li><a href="/pbireport/campaigns/Other"><i class="fa fa-list-alt"></i>Other Campaigns</a></li>
                     {% endif %}
                   <li><a href="/pbireport/settings"><i class="fa fa-gear"></i>Settings</a></li>
                 </ul>
@@ -140,7 +145,7 @@
             "bLengthChange": true,
             "bFilter": true,
             "bInfo": true,
-            "pageLength": 50,
+            "pageLength": 100,
             responsive: true
           } );
       } );

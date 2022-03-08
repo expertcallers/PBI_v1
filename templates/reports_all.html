@@ -6,15 +6,22 @@
         <div class="right_col" role="main">
           <div class="page-title">
             <div class="title_left">
-              <h3>All Reports</h3>
+              {% if type == "Outbound" %}
+              <h1>Outbound Campaigns</h1>
+              {% elif type == "Inbound" %}
+              <h1>Inbound Campaigns</h1>
+              {% elif type == "Email" %}
+              <h1>Email Campaigns</h1>
+              {% elif type == "Other" %}
+              <h1>Other Campaigns</h1>
+              {% else %}
+              <h1>All Campaigns</h1>
+              {% endif %}
             </div>
           </div>
-          <div class="row">
+          <div class="row pb-4">
             <div class="col-md-12">
               <div class="card">
-                <div class="card-header">
-                  <h2>View Report</h2>
-                </div>
                 <div class="card-body">
                   <table  id="datatablex" class="table table-striped dt-responsive" style="max-width: 100% !important;">
                     <thead>
