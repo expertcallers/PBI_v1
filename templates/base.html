@@ -71,7 +71,7 @@
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="logout">
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="/pbireport/">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -92,7 +92,7 @@
                     <img src="{% static 'power/images/img.jpg' %}" alt=""> {% if user.profile.campaignid == "all" %}{{user.username}}{% endif %}{% if user.profile.campaignid != "all" %}{{user.profile.campaign}}{% endif %}
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="/pbireport/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    <a class="dropdown-item"  href="/pbireport/"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                   </div>
                 </li>
 
@@ -145,9 +145,21 @@
             "bFilter": true,
             "bInfo": true,
             "pageLength": 100,
+            dom: 'Bfrtip',
+            buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
             responsive: true
           } );
       } );
     </script>
+
+{% if messages %}
+	<script>
+			{% for m in messages %}
+				alert("{{m}}");
+			{% endfor %}
+	</script>
+{% endif %}
   </body>
 </html>
