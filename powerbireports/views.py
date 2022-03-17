@@ -5,12 +5,11 @@ from django.contrib.auth import login, logout, update_session_auth_hash, authent
 from django.contrib.auth.forms import PasswordChangeForm
 from .models import *
 
-
-# Create your views here.
 # login-page
 def loginPage(request):
     logout(request)
     return render(request, 'login.html')
+
 
 def loginAndRedirect(request):
     if request.method == 'POST':
@@ -42,6 +41,11 @@ def loginAndRedirect(request):
     else:
         logout(request)
         return render(request, 'login.html')
+
+
+def logoutNew(request):
+    logout(request)
+    return render(request, 'login.html')
 
 
 # Management Dashboard
