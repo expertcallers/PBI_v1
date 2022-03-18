@@ -52,7 +52,7 @@ def logoutNew(request):
 @login_required
 def managementDashboard(request):
     if request.user.profile.campaignid == 'all':
-        all_cam = Profile.objects.all().exclude(campaign_type=None).count()
+        all_cam = Profile.objects.exclude(campaign_type=None).count()
         outbound = Profile.objects.filter(campaign_type="Outbound").count()
         inbound = Profile.objects.filter(campaign_type="Inbound").count()
         email = Profile.objects.filter(campaign_type="Email").count()
@@ -101,7 +101,11 @@ def change_password(request):
 @login_required
 def allReport(request,cid):
     if request.user.profile.campaignid == cid or request.user.profile.campaignid == 'all':
-        return render(request, ''+cid+'.html')
+        if request.user.profile.campaign_status == False:
+            messages.info(request, "The Campaign is currently paused")
+            return redirect('/pbireport/')
+        else:
+            return render(request, ''+cid+'.html')
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
         return redirect('/pbireport/')
