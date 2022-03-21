@@ -5,6 +5,11 @@ from django.contrib.auth import login, logout, update_session_auth_hash, authent
 from django.contrib.auth.forms import PasswordChangeForm
 from .models import *
 
+
+def view_404(request, exception=None):
+    print('-------------------test -------------')
+    return redirect('/')
+    
 # login-page
 def loginPage(request):
     logout(request)
