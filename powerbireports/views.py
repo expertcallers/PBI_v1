@@ -114,5 +114,3 @@ def allReport(request,cid):
     else:
         messages.info(request, "You were logged out due to unauthorized access.")
         return redirect('/pbireport/')
-
-# Test
