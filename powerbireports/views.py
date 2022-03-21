@@ -6,9 +6,8 @@ from django.contrib.auth.forms import PasswordChangeForm
 from .models import *
 
 
-def view_404(request, exception=None):
-    print('-------------------test -------------')
-    return redirect('/')
+def view_404(request, exception=None): 
+    return render(request,'404.html')
     
 # login-page
 def loginPage(request):
