@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+
+
+          <div class="page-title">
+            <div class="title_left">
+              <h1>Jumpydz</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tabss">
+              <ul class="nav nav-pills">
+                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Head Count</a></li>
+                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">QA</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade show active">
+                  <iframe width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiMjU0MmRlYzYtMGE3Mi00YjBkLWI1YWYtYTNlMWIwYWQyNjZlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection7f58e5930ad63f0be595" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <iframe width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMjU0MmRlYzYtMGE3Mi00YjBkLWI1YWYtYTNlMWIwYWQyNjZlIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectione2b132e249e637e81ba5" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+
+
+{% endblock %}
