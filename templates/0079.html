@@ -2,36 +2,26 @@
 {% load static %}
 {% block main %}
 
-        <!-- page content -->
-        <div class="right_col" role="main">
+<!-- page content -->
+<div class="right_col" role="main">
 
 
-          <div class="page-title">
-            <div class="title_left">
-              <h1>Global Pharma</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 tabss">
-              <ul class="nav nav-pills">
-                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Head Count</a></li>
-                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">QA</a></li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="home" class="tab-pane fade show active">
-                  <iframe width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiNDU4MTA1M2ItMzFjOC00ZjQzLWJmMDMtM2E2ZjA0NDcwZjYzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                  <iframe width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNDU4MTA1M2ItMzFjOC00ZjQzLWJmMDMtM2E2ZjA0NDcwZjYzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection2cc7ae1cc844e4c5537e" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-              </div>
-                 
-            </div>
-          </div>
+    <div class="page-title">
+        <div class="title_left">
+            <h1>Global Pharma</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <iframe allowFullScreen="true" frameborder="0"
+                    height="804"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNDU4MTA1M2ItMzFjOC00ZjQzLWJmMDMtM2E2ZjA0NDcwZjYzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection" width="1024"></iframe>
 
         </div>
-        <!-- /page content -->
+    </div>
+
+</div>
+<!-- /page content -->
 
 
 {% endblock %}

@@ -2,36 +2,25 @@
 {% load static %}
 {% block main %}
 
-        <!-- page content -->
-        <div class="right_col" role="main">
+<!-- page content -->
+<div class="right_col" role="main">
 
 
-          <div class="page-title">
-            <div class="title_left">
-              <h1>Third Wave Coffee</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 tabss">
-              <ul class="nav nav-pills">
-                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Head Count</a></li>
-                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">QA Report DS NC</a></li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="home" class="tab-pane fade show active">
-                  <iframe width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiNDkxZTg2NGItODE0NS00MzY2LThhM2MtMmMwMTc2ZTk5ZmQzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                  <iframe width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNDkxZTg2NGItODE0NS00MzY2LThhM2MtMmMwMTc2ZTk5ZmQzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-              </div>
-                 
-            </div>
-          </div>
-
+    <div class="page-title">
+        <div class="title_left">
+            <h1>Third Wave Coffee</h1>
         </div>
-        <!-- /page content -->
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <iframe allowFullScreen="true" frameborder="0"
+                    height="804"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNDkxZTg2NGItODE0NS00MzY2LThhM2MtMmMwMTc2ZTk5ZmQzIiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9" width="1024"></iframe>
+        </div>
+    </div>
+
+</div>
+<!-- /page content -->
 
 
 {% endblock %}

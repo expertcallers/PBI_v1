@@ -1,38 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block main %}
-         <!-- page content -->
-        <div class="right_col" role="main">
-          <div class="page-title">
-            <div class="title_left">
-              <h1>Mobile 22</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 tabss">
-              <ul class="nav nav-pills">
-                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">Report</a></li>
-                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Head Count</a></li>
-                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu2">QA</a></li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="home" class="tab-pane fade show active">
-                  <iframe title="Mobile 22" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiM2Q3MDZkYzUtNzE4ZC00ZjVlLWI2MTctMWY0MDhhOTZkMzM4IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                  <iframe title="Mobile 22" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiM2Q3MDZkYzUtNzE4ZC00ZjVlLWI2MTctMWY0MDhhOTZkMzM4IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection2924fdd05eb809f3bd5b" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                  <iframe title="Mobile 22" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiM2Q3MDZkYzUtNzE4ZC00ZjVlLWI2MTctMWY0MDhhOTZkMzM4IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSectiond612bad86274e54a8858" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-              </div>
-                 
-            </div>
-          </div>
-
+<!-- page content -->
+<div class="right_col" role="main">
+    <div class="page-title">
+        <div class="title_left">
+            <h1>Mobile 22</h1>
         </div>
-        <!-- /page content -->
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <iframe allowFullScreen="true" frameborder="0" height="1060"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiM2Q3MDZkYzUtNzE4ZC00ZjVlLWI2MTctMWY0MDhhOTZkMzM4IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection"
+                    title="Mobile 22" width="1024"></iframe>
+        </div>
+    </div>
+
+</div>
+<!-- /page content -->
 
 
 {% endblock %}

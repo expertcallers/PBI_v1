@@ -2,34 +2,24 @@
 {% load static %}
 {% block main %}
 
-        <!-- page content -->
-        <div class="right_col" role="main">
+<!-- page content -->
+<div class="right_col" role="main">
 
 
-          <div class="page-title">
-            <div class="title_left">
-              <h1>Bright way</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 tabss">
-              <ul class="nav nav-pills">
-                <li><a class="btn btn-sm btn-success active" data-toggle="tab" href="#home">QA Report</a></li>
-                <li><a class="btn btn-sm btn-success" data-toggle="tab" href="#menu1">Head Count</a></li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="home" class="tab-pane fade show active">
-                  <iframe title="Bright Way" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZWU4NmExYTktOGQ1Mi00ODY5LTk2ZjYtMTM2NDM2ZWMwODc2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                  <iframe title="Bright Way" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZWU4NmExYTktOGQ1Mi00ODY5LTk2ZjYtMTM2NDM2ZWMwODc2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection6d48e3e0451acad5d93a" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-            </div>
-          </div>
-
+    <div class="page-title">
+        <div class="title_left">
+            <h1>Bright way</h1>
         </div>
-        <!-- /page content -->
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <iframe allowFullScreen="true" frameborder="0" height="1060"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiZWU4NmExYTktOGQ1Mi00ODY5LTk2ZjYtMTM2NDM2ZWMwODc2IiwidCI6IjlkODBmZDUwLTc1YWQtNDIxNS05ZjFiLWE2MzBmYWIxNDk1NCJ9&pageName=ReportSection"
+                    title="Bright Way" width="1024"></iframe>
+        </div>
+
+    </div>
+    <!-- /page content -->
 
 
-{% endblock %}
+    {% endblock %}
