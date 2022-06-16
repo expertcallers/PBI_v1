@@ -77,7 +77,7 @@ def managementDashboard(request):
             all_cam = Profile.objects.filter(campaignid__in=cam_id).exclude(
                 Q(campaign_type=None) | Q(campaign_type='limited')).count()
         else:
-            all_cam = Profile.objects.exclude(campaign_type=None).count()
+            all_cam = Profile.objects.exclude(Q(campaign_type=None) | Q(campaign_type='limited')).count()
 
         if campaign_type == 'limited':
             cam_id = []
