@@ -74,7 +74,8 @@ def managementDashboard(request):
             mapping = Mapping.objects.filter(user=request.user)
             for i in mapping:
                 cam_id.append(i.campaign.campaignid)
-            all_cam = Profile.objects.filter(campaignid__in=cam_id).exclude(campaign_type=None).count()
+            all_cam = Profile.objects.filter(campaignid__in=cam_id).exclude(
+                Q(campaign_type=None) | Q(campaign_type='limited')).count()
         else:
             all_cam = Profile.objects.exclude(campaign_type=None).count()
 
@@ -131,9 +132,9 @@ def campaignsReport(request,type):
                 mapping = Mapping.objects.filter(user=request.user)
                 for i in mapping:
                     cam_id.append(i.campaign.campaignid)
-                pro = Profile.objects.filter(campaignid__in=cam_id).exclude(campaign_type=None)
+                pro = Profile.objects.filter(campaignid__in=cam_id).exclude(Q(campaign_type=None) | Q(campaign_type='limited'))
             else:
-                pro = Profile.objects.exclude(campaign_type=None)
+                pro = Profile.objects.exclude(Q(campaign_type=None) | Q(campaign_type='limited'))
         else:
             if campaign_type == 'limited':
                 cam_id = []
