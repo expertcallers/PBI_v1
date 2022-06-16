@@ -27,14 +27,14 @@
                     <thead>
                       <tr>
                         <th>Campaign ID</th>
-                        <th>Campaign Name</th>
+                        <th>Campaign Name (type)</th>
                         <th>Action</th>
                       </tr>
                     </thead>
                     <tfoot>
                       <tr>
                         <th>Campaign ID</th>
-                        <th>Campaign Name</th>
+                        <th>Campaign Name (type)</th>
                         <th>Action</th>
                       </tr>
                     </tfoot>
@@ -42,7 +42,7 @@
                     {% for i in profile %}
                       <tr>
                         <td>{{i.campaignid}}</td>
-                        <td>{{i.campaign}}</td>
+                        <td>{{i.campaign}} ({{i.campaign_type}})</td>
                         <td>
                           {% if i.campaign_status == False %}
                           <button disabled class="btn btn-danger">Paused</button>

@@ -22,6 +22,10 @@
     <!-- Custom Theme Style -->
     <link href="{% static 'power/build/css/custom.min.css' %}" rel="stylesheet">
 
+    <!-- The follwing two tags to be added Can be added to base file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
     <style type="text/css">
       .tabss .nav > li > a:hover, .tabss .nav > li > a:focus {
         background: green;
@@ -30,9 +34,10 @@
         width: 100% !important;
         height: 100vh !important;
       }
-
+      .select2-container {
+        width: 100% !important;
+      }
     </style>
-
 
   </head>
 
@@ -62,6 +67,9 @@
                         <li><a href="/pbireport/campaigns/Inbound"><i class="fa fa-headphones"></i>Inbound Campaigns</a></li>
                         <li><a href="/pbireport/campaigns/Email"><i class="fa fa-envelope"></i>Email Campaigns</a></li>
                         <li><a href="/pbireport/campaigns/Other"><i class="fa fa-list-alt"></i>Other Campaigns</a></li>
+                        {% if user.profile.campaign_type == None %}
+                        <li><a href="/pbireport/campaign-assigning"><i class="fa fa-users"></i>Campaign Mapping</a></li>
+                        {% endif %}
                     {% endif %}
                   <li><a href="/pbireport/settings"><i class="fa fa-gear"></i>Settings</a></li>
                 </ul>
@@ -71,7 +79,7 @@
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="/pbireport/">
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="/pbireport/logout">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -92,10 +100,9 @@
                     <img src="{% static 'power/images/img.jpg' %}" alt=""> {% if user.profile.campaignid == "all" %}{{user.username}}{% endif %}{% if user.profile.campaignid != "all" %}{{user.profile.campaign}}{% endif %}
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="/pbireport/"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    <a class="dropdown-item"  href="/pbireport/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                   </div>
                 </li>
-
               </ul>
             </nav>
           </div>
@@ -136,7 +143,11 @@
     <!-- Custom Theme Scripts -->
     <script src="{% static 'power/build/js/custom.min.js' %}"></script>
 
-
+    <!-- The follwing two tags to be added Can be added to base file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script>
+      $('.select2').select2();
+    </script>
     <script type="text/javascript">
       $(document).ready(function() {
           $('#datatablex').DataTable( {
