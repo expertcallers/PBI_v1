@@ -12,8 +12,9 @@ class profileSearchResource(resources.ModelResource):
     class Meta:
         model = Profile
 
+
 class Search(ImportExportModelAdmin):
-    search_fields = ("campaignid", "campaign", 'user')
+    search_fields = ("campaignid", "campaign", 'user__username')
     list_display = ('campaignid', "campaign", 'campaign_type', 'user', 'campaign_status')
     list_filter = ['campaign_type']
     resource_class = profileSearchResource
@@ -22,6 +23,7 @@ class Search(ImportExportModelAdmin):
 class MappingSearchResource(resources.ModelResource):
     class Meta:
         model = Mapping
+
 
 class MappingSearch(ImportExportModelAdmin):
     search_fields = ("campaign", "user")
@@ -42,18 +44,7 @@ class EmployeesSearch(ImportExportModelAdmin):
     list_filter = ['emp_desi']
     resource_class = EmployeesSearchResource
 
-class UserResource(resources.ModelResource):
-    class Meta:
-        model = User
-        fields = ('username', 'id')
 
-class UserAdmin(ImportExportModelAdmin):
-    resource_class = UserResource
-    list_display = ("id", "username",)
-    pass
-
-admin.site.unregister(User)
-admin.site.register(User, UserAdmin)
 admin.site.register(Profile, Search)
 admin.site.register(Mapping, MappingSearch)
 admin.site.register(Employees, EmployeesSearch)
